@@ -72,7 +72,3 @@ if doesoption:
     st.pyplot(fig)
 else:
     st.write("Please select a state to begin.")
-    ax.legend()
-    st.pyplot(fig)
-else:
-    st.write("Please select a state to begin.")
