@@ -22,7 +22,7 @@ doesoption = st.selectbox("Which state would you like to select?", [""] + states
 if doesoption:
     st.write("You selected:", doesoption)
     #Reading csv file 
-    df = pd.read_csv("C:\\Users\\Callie\\Downloads\\ilidata.csv")
+    df = pd.read_csv("ilidata.csv")
 
     df["release_date"] = pd.to_datetime(df["release_date"])
     df["release_week"] = df["release_date"].dt.isocalendar().week
